@@ -799,10 +799,8 @@ display: flex;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
- 
-      flex-wrap: wrap;
-       
+  display: flex; 
+  flex-wrap: wrap;       
 }
 .contact .row .map {
   width: 45%;
@@ -812,6 +810,12 @@ display: flex;
   -webkit-backdrop-filter: blur(0.4rem);
           backdrop-filter: blur(0.4rem);
 }
+
+@media (max-width: 767px) {
+  .contact .row .map {
+    width: 100%;
+  }
+}
 .contact .row .form {
      width: 45%;
     padding: 2rem;
@@ -820,9 +824,9 @@ display: flex;
   -webkit-backdrop-filter: blur(0.4rem);
           backdrop-filter: blur(0.4rem);
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .contact .row .form {
-    width: 80%;
+    width: 100%;
   }
 }
 
